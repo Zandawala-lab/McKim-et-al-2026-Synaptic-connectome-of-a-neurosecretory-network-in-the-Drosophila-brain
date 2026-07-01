@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red24\green26\blue30;\red13\green80\blue209;
+\red100\green100\blue100;\red100\green100\blue100;\red13\green80\blue209;\red24\green26\blue30;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c12157\c13725\c15686;\cssrgb\c3529\c41176\c85490;
+\cssrgb\c46667\c46667\c46667;\cssrgb\c46667\c46667\c46667;\cssrgb\c3529\c41176\c85490;\cssrgb\c12157\c13725\c15686;}
+\margl1440\margr1440\vieww11520\viewh13500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 Notes on Influence Analysis\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+This analysis uses:\
+ConnectomeInfluenceCalculator\uc0\u8232 {\field{\*\fldinst{HYPERLINK "https://github.com/DrugowitschLab/ConnectomeInfluenceCalculator"}}{\fldrslt \ul \ulc4 https://github.com/DrugowitschLab/ConnectomeInfluenceCalculator}}\
+Follow installation instructions from the source repository.\
+The ConnectomeInfluenceCalculator has dependencies that run only in a Linux environment.\'a0For convenience, the outputs of these files as raw influence\'a0.csv\'a0have been included in\'a0/input/FAFB_influence or BANC_influence.\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 Figure 6 - FAFB\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+Sensory_influence_FAFB.py 
+\f0 runs the influence analysis and saves the output to csv files\
+This script contains the IDs of the neurons stimulated in the model, as well as their categorization for visualization\
+\
+This script depends on data from 
+\f1 FAFB_prince.sqlite, 
+\f0 \cf2 \outl0\strokewidth0 \strokec6 which was generated using the following files and versions downloaded from codex:\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://github.com/Zandawala-lab/Halberg-et-al-2026-Drinking#required-files-2"}}{\fldrslt \cf2 \strokec7 \
+}}\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \strokec8 Connectivity\uc0\u8232 
+\f1 connections_princeton_no_threshold.csv
+\f0 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://codex.flywire.ai/api/download?dataset=fafb"}}{\fldrslt \ul \strokec7 https://codex.flywire.ai/api/download?dataset=fafb}}\uc0\u8232 Retrieved: 15 Jul 2025 (FAFB v783)\
+Neurotransmitter Type Predictions\uc0\u8232 
+\f1 neurons.csv
+\f0 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://codex.flywire.ai/api/download?dataset=fafb"}}{\fldrslt \ul \strokec7 https://codex.flywire.ai/api/download?dataset=fafb}}\uc0\u8232 Retrieved: 16 Apr 2024 (FAFB v783) A copy is included in this repository.\
+Classification / Hierarchical Annotations\uc0\u8232 
+\f1 classification.csv
+\f0 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://codex.flywire.ai/api/download?dataset=fafb"}}{\fldrslt \ul \strokec7 https://codex.flywire.ai/api/download?dataset=fafb}}\uc0\u8232 Retrieved: 14 May 2025 (FAFB v783) A copy is included in this repository.\
+Cell Types\uc0\u8232 
+\f1 consolidated_cell_types.csv
+\f0 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://codex.flywire.ai/api/download?dataset=fafb"}}{\fldrslt \ul \strokec7 https://codex.flywire.ai/api/download?dataset=fafb}}\uc0\u8232 Retrieved: 21 May 2025 (FAFB v783) A copy is included in this repository.\
+To retrieve older metadata from Flywire Codex, press the gray\'a0File Info\'a0button next to download.\strokec6 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \outl0\strokewidth0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf2 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf2 Figure 6 S1 - BANC\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+Sensory_influence_BANC.py 
+\f0 runs the influence analysis and saves the output to csv files\
+This script contains the IDs of the neurons stimulated in the model, as well as their categorization for visualization\
+\
+This script depends on data from 
+\f1 BANC_v888_06032026.sqlite,
+\f0 which was generated using the following files and versions downloaded from Harvard dataverse:\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1 \cf2 banc_888_meta.feather
+\f0 \cf2 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://dataverse.harvard.edu/file.xhtml?fileId=13923343&version=1.0"}}{\fldrslt \cf2 \ul \ulc2 https://dataverse.harvard.edu/file.xhtml?fileId=13923343&version=1.0}}\uc0\u8232 Retrieved: 03 June 2026\kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1 \cf2 banc_888_edgelist_simple_v2.feather
+\f0 \uc0\u8232 Download:\'a0{\field{\*\fldinst{HYPERLINK "https://dataverse.harvard.edu/file.xhtml?fileId=13916462&version=1.0"}}{\fldrslt \ul \ulc2 https://dataverse.harvard.edu/file.xhtml?fileId=13916462&version=1.0}}\uc0\u8232 Retrieved: 03 June 2026\cf2 \outl0\strokewidth0 \strokec6 \
+}
