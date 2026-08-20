@@ -9,7 +9,7 @@
 
 # Run full install version
 install.packages("natmanager")
-natmanager::install('natverse') 
+natmanager::install('natverse')
 
 # Other packages to install
 install.packages('rglplus')
@@ -29,7 +29,7 @@ simple_python("full")
 simple_python("full")
 
 # set flywire token for access and version for caveclient: https://natverse.org/fafbseg/
-# How to check access: 
+# How to check access:
 # https://natverse.org/fafbseg/reference/flywire_set_token.html
 flywire_set_token()
 
@@ -49,6 +49,8 @@ download_jefferislab_registrations()
 # banc token: https://github.com/natverse/bancr#installation
 banc_set_token()
 
-
+# install malecns package
+# https://github.com/natverse/malecns
+natmanager::install(pkgs="natverse/malecns")
 
 
