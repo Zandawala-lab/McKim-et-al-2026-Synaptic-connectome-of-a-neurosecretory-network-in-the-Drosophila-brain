@@ -5,7 +5,7 @@ McKim et al. (2026) Synaptic connectome of a neurosecretory network in the *Dros
 https://doi.org/10.7554/eLife.102684
 <br>
 <br>
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20795211.svg)](https://doi.org/10.5281/zenodo.20795211)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20795210.svg)](https://doi.org/10.5281/zenodo.20795210)
 
 ## Getting Started
 1. Download this repository<br>
